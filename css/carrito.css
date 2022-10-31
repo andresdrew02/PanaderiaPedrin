@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-top: 8rem;
+    margin-left: .5rem;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+header p {
+    color: rgb(61, 61, 61);
+}
+
+main {
+    margin-top: 50px;
+    margin-left: .5rem;
+}
+
+main .productos {
+    width: 70%;
+}
+
+main .productos .producto * {
+    margin: .4rem;
+}
+
+main .productos .producto {
+    display: flex;
+    box-shadow: rgba(77, 77, 77, 0.16) 0px 1px 5px, rgb(212, 212, 212) 0px 0px 0px 2px;
+    border-radius: .5rem;
+    justify-content: space-between;
+}
+
+main .productos .producto .header-producto {
+    display: flex;
+    width: 60%;
+}
+
+main .productos .producto .header-producto img {
+    object-fit: cover;
+    width: 10rem;
+    height: 8rem;
+}
+
+main .productos .producto .header-producto .info-producto h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(31, 31, 31);
+}
+
+main .productos .producto .header-producto .info-producto h3 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: rgb(31, 31, 31);
+}
+
+main .productos .producto .header-producto .info-producto {
+    line-height: 40px;
+}
+
+span {
+    color: rgb(75, 45, 1);
+    font-weight: bold;
+}
+
+aside {
+    margin-top: -.9rem;
+    font-family: Arial, Helvetica, sans-serif !important;
+}

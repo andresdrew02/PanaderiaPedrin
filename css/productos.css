@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree&family=Roboto&family=Source+Sans+Pro&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+main{
+    margin-top:100px;
+}
+
+header{
+    color:rgb(75, 45, 1);
+    background-color:beige;
+    margin-top:150px;
+    height:10rem;
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+
+header .header-title{
+    width:98%;
+    height:100%;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.productos{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin-top:-75px;
+}
+
+.card{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color:rgb(245, 245, 245);
+    flex:1 0 10%;
+    margin:1rem;
+    margin-top:50px;
+    height:100%;
+}
+
+.card .card-header img{
+    object-fit:cover;
+    width:100%;
+    height: 18rem;
+}
+
+.card .card-header h2{
+    font-size:1.5rem;
+    text-align:center;
+}
+
+.card .card-body{
+    display:flex;
+    justify-content:space-between;
+    flex-direction:column;
+    margin-top:25px;
+    margin-left:10px;
+}
+
+.card .card-body h3{
+    font-size:1rem;
+    font-weight:normal;
+}
+
+.card .card-body .card-valoration{
+    margin-top:10px;
+    display:flex;
+}
+
+.card .card-footer{
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-end;
+    margin-bottom:10px;
+}
+
+.card .card-footer .card-price{
+    margin-right: 20px;
+    font-weight:bold;
+    font-size:1.3rem;
+}
+
+.card .card-footer .card-price *{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.antiguoprecio{
+    text-decoration:line-through;
+    color:gray;
+}
+
+.card button{
+    cursor: pointer;
+    margin:auto;
+    margin-top:20px;
+    background-color: #ffe760;
+    border: 1px solid transparent;
+    border-radius: .75rem;
+    box-sizing: border-box;
+    color: black;
+    font-size: 1.125rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    padding: .75rem 1.2rem;
+    text-align: center;
+    width: 200px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.card button:focus{
+    box-shadow: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.separador{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    width: 75%;
+    margin-left:5vh;
+}
+
+.separador .gris{
+    background-color: rgb(163, 117, 73);
+    height:.3vh;
+    width:33%;
+}
+
+.separador .amarillo{
+    background-color:#fff1a1;
+    height:.3vh;
+    width:33%;
+}
