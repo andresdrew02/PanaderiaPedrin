@@ -101,9 +101,55 @@
                 </div>
                 <div class="cuerpo-producto">
                     <button><i class="fa-regular fa-trash-can"></i></button>
-                    <input type="number">
+                    <input type="number" id="numero" class="numero" required onchange="calcularPrecio()">
                 </div>
             </div>
+
+            <div class="producto">
+                <div class="header-producto">
+                    <img src="../img/pan.png">
+                    <div class="info-producto">
+                        <h2>Barra de pan rota</h2>
+                        <h3>Precio unitario:<span>5,43€</span></h3>
+                    </div>
+                </div>
+                <div class="cuerpo-producto">
+                    <button><i class="fa-regular fa-trash-can"></i></button>
+                    <input type="number" id="numero" class="numero" required onchange="calcularPrecio()">
+                </div>
+            </div>
+
+            <div class="producto">
+                <div class="header-producto">
+                    <img src="../img/pan.png">
+                    <div class="info-producto">
+                        <h2>Barra de pan rota</h2>
+                        <h3>Precio unitario:<span>5,43€</span></h3>
+                    </div>
+                </div>
+                <div class="cuerpo-producto">
+                    <button><i class="fa-regular fa-trash-can"></i></button>
+                    <input type="number" id="numero" class="numero" required onchange="calcularPrecio()">
+                </div>
+            </div>
+
+            <div class="producto">
+                <div class="header-producto">
+                    <img src="../img/pan.png">
+                    <div class="info-producto">
+                        <h2>Barra de pan rota</h2>
+                        <h3>Precio unitario:<span>5,43€</span></h3>
+                    </div>
+                </div>
+                <div class="cuerpo-producto">
+                    <button><i class="fa-regular fa-trash-can"></i></button>
+                    <input type="number" id="numero" class="numero" required onchange="calcularPrecio()">
+                </div>
+            </div>
+        </div>
+        <div class="resumen">
+            <h2>Total de la compra: <label id="precio"></label></h2>
+            <button class="tramitar">Tramitar pedido</button>
         </div>
     </main>
 
@@ -155,4 +201,34 @@
         </div>
     </footer>
 </body>
+
+<script>
+    const precios = document.querySelectorAll(".numero")
+    const totalEl = document.getElementById("precio")
+    console.log(totalEl)
+    
+    const calcularPrecio = ( ) =>{
+        let total = 0;
+        precios.forEach((e)=>{
+            let precioIndividual = getPrecio(e)
+            let cantidadIndividual = getCantidad(e)
+            total += precioIndividual*cantidadIndividual
+        })
+        totalEl.innerHTML = total + "€"
+    }
+
+    const getPrecio = (e) => {
+        let precioIndividual = e.parentNode.parentNode.children[0].children[1].children[1].textContent
+        precioIndividual = precioIndividual.replace("Precio unitario:","").replace("€","").replace(",",".")
+        return Number(precioIndividual)
+    }
+
+    const getCantidad = (e) => {
+        let cantidadIndividual = e.parentNode.parentNode.children[1].children[1].value
+        return Number(cantidadIndividual)
+    }
+
+    calcularPrecio()
+</script>
+
 </html>
