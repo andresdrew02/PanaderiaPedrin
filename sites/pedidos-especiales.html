@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería Pedrín | Pedidos Especiales</title>
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/pedidosespeciales.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree&family=Roboto&display=swap" rel="stylesheet">
+    <!--FA ICONS-->
+    <script src="https://kit.fontawesome.com/84a45588bb.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/x-icon" href="./img/panFONDO.png">
+
+    <!--JS-->
+    <script src="../js/menu.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../img/pan.png" alt="logo de la empresa" />
+            <img src="../img/panaderia_pedrin.png">
+        </div>
+        <div class="elementos_menu">
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="#">Productos</a></li>
+                <li class="selected"><a href="#">Pedidos especiales</a></li>
+                <li class="carrito"><i class="fa-solid fa-cart-shopping"></i></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <aside>
+        <div class="menu">
+            <div class="menu-header">
+                <h1>Carrito de la compra</h1>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="menu-separator"></div>
+            <!--Productos-->
+            <div class="cart-product">
+                <img src="../img/pan.png">
+                <div class="cart-product-description">
+                    <h1>Barra de pan rota</h1>
+                    <h2>Unidades: 5</h2>
+                    <div class="separador">
+                        <div class="gris"></div>
+                        <div class="gris"></div>
+                        <div class="gris"></div>
+                    </div>
+                    <div class="cart-product-info">
+                        <h3>12.5€</h3>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-product">
+                <img src="../img/pan.png">
+                <div class="cart-product-description">
+                    <h1>Barra de pan rota</h1>
+                    <h2>Unidades: 5</h2>
+                    <div class="separador">
+                        <div class="gris"></div>
+                        <div class="gris"></div>
+                        <div class="gris"></div>
+                    </div>
+                    <div class="cart-product-info">
+                        <h3>12.5€</h3>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-footer">
+                <button><a href="./carrito-compra.html">Tramitar pedido</a></button>
+            </div>
+        </div>
+    </aside>
+
+    <!--
+    • Una descripción del producto que desea (debe ser un campo de texto amplio).
+    • Una sección de alérgenos donde el usuario pueda detallar, si es necesario, con qué alimentos
+    deben tener especial cuidado o qué ingredientes no deben utilizar.
+    • La cantidad que desea de un producto (los pedidos máximos serán de 50 unidades, ya que se
+    trata de una panadería pequeña).
+    • La fecha de entrega. El cliente quiere que el usuario pueda elegir el día exacto para el que
+    quiere el pedido, para dar la posibilidad al usuario de hacer encargos a futuro. Por ejemplo,
+    puede ser que nos pidan una torta de pan para un evento y la necesiten para el domingo.
+    • Horario de entrega. El cliente desea que el usuario de la web pueda establecer un rango de
+    horas para entregar el pedido, para asegurarse de que cuando vayan a entregarlo puedan
+    recogerlo.
+    • Un botón agregar el pedido especial al carrito.
+    -->
+
+
+    <main>
+        <form method="post" action="#">
+            <div class="form-column">
+                <div class="form-option">
+                    <label for="descripcion">Descripción: </label>
+                    <textarea name="descripcion" id="descripcion"></textarea>
+                </div>
+                
+                <div class="form-option">
+                    <label for="alergenos">Alergenos: <i class="fa-solid fa-circle-plus"></i> </label>
+                    
+                </div>
+    
+                <div class="form-option">
+                    <label for="cantidad">Cantidad: </label>
+                    <input type="number" name="cantidad" id="cantidad">
+                </div>
+            </div>
+
+            <div class="form-column">
+                <div class="form-option">
+                    <label for="fechaentrega">Fecha de entrega deseada: </label>
+                    <input type="date" name="fechaentrega" id="fechaentrega">
+                </div>
+                <div class="form-option">
+                    <label for="horaentrega">Hora de entrega deseada: </label>
+                    <input type="time" name="horaentrega" id="horaentrega">
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-principal">
+            <div class="footer-seccion">
+                <div class="footer-info">
+                    <h1>Información</h1>
+                    <div class="footer-content">
+                        <a href="#" class="separacion-20">¿Quiénes somos?</a>
+                        <a href="./politicas/privacidad.html">Política de privacidad</a>
+                        <a href="#">Política de cookies</a>
+                        <a href="#">Condiciones legales</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-separador">
+                <div class="blanco"></div>
+                <div class="blanco"></div>
+                <div class="blanco"></div>
+            </div>
+            <div class="footer-seccion">
+                <div class="footer-info">
+                    <h1>Haz tu pedido por teléfono</h1>
+                    <div class="footer-content">
+                        <h2>744 924 921</h2>
+                        <p>Horario de lunes a domingo de 6:00 a 14:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-separador">
+                <div class="blanco"></div>
+                <div class="blanco"></div>
+                <div class="blanco"></div>
+            </div>
+            <div class="footer-seccion">
+                <div class="footer-info">
+                    <h1>Síguenos en redes sociales</h1>
+                    <div class="footer-content">
+                        <div class="separacion-20">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let alergenosDiv = document.querySelectorAll(".form-option")[1]
+        const addEl = '<input type="text" name="alergenos">'
+        let crucetaEl = alergenosDiv.querySelector("i")
+        let contador = 0;
+
+        crucetaEl.addEventListener("click",function(){
+            contador++
+            alergenosDiv.innerHTML += addEl
+            startListener(alergenosDiv.querySelector("i"))
+        })
+
+        function startListener(e){
+            contador++
+            e.addEventListener("click",function(){
+                alergenosDiv.innerHTML += addEl
+                if (contador != 5){
+                    startListener(alergenosDiv.querySelector("i"))
+                }
+            })
+        }
+        
+        
+    </script>
+</body>
+
+
+</html>

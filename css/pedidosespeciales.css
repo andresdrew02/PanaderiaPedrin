@@ -1,0 +1,44 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+aside{
+    margin-top:-45px;
+}
+
+main{
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top:130px;
+    font-size:1.1rem;
+}
+
+main form{
+    display:flex;
+    border:1px solid black;
+    width:100%;
+    justify-content:center;
+}
+
+main form label{
+    margin-top:10px;
+}
+
+main form label i{
+    font-size:1.2rem;
+    cursor:pointer;
+}
+
+main form input,textarea{
+    width:100%;
+    margin-top:10px;
+}
+
+.form-option{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-column{
+    margin:50px;
+}
