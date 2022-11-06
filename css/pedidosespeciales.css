@@ -9,21 +9,6 @@ aside{
 
 main{
     font-family:Arial, Helvetica, sans-serif;
-<<<<<<< HEAD
-    margin-top:130px;
-    font-size:1.1rem;
-}
-
-main form{
-    display:flex;
-    border:1px solid black;
-    width:100%;
-    justify-content:center;
-}
-
-main form label{
-    margin-top:10px;
-=======
     margin-top:180px;
     font-size:1.1rem;
     width:100%;
@@ -43,7 +28,6 @@ main form{
     justify-content:center;
     flex-direction: column;
     border-radius:10px;
->>>>>>> 547d14d (proyecto terminado (por ahora))
 }
 
 main form label i{
@@ -51,11 +35,6 @@ main form label i{
     cursor:pointer;
 }
 
-<<<<<<< HEAD
-main form input,textarea{
-    width:100%;
-    margin-top:10px;
-=======
 main form textarea{
     height:150px;
     width:300px;
@@ -80,7 +59,6 @@ form input:focus,textarea:focus{
 
 form input[type="number"]{
     width:60px;
->>>>>>> 547d14d (proyecto terminado (por ahora))
 }
 
 .form-option{
@@ -90,9 +68,6 @@ form input[type="number"]{
 
 .form-column{
     margin:50px;
-<<<<<<< HEAD
-}
-=======
 }
 
 .form-body{
@@ -151,4 +126,3 @@ aside{
     font-family: Arial, Helvetica, sans-serif;
 }
 
->>>>>>> 547d14d (proyecto terminado (por ahora))

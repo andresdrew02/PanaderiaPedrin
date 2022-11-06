@@ -15,11 +15,7 @@
     <!--FA ICONS-->
     <script src="https://kit.fontawesome.com/84a45588bb.js" crossorigin="anonymous"></script>
 
-<<<<<<< HEAD
-    <link rel="icon" type="image/x-icon" href="./img/panFONDO.png">
-=======
     <link rel="icon" type="image/x-icon" href="../img/panFONDO.png">
->>>>>>> 547d14d (proyecto terminado (por ahora))
 
     <!--JS-->
     <script src="../js/menu.js"></script>
@@ -34,11 +30,7 @@
         <div class="elementos_menu">
             <ul>
                 <li><a href="../index.html">INICIO</a></li>
-<<<<<<< HEAD
-                <li><a href="#">Productos</a></li>
-=======
                 <li><a href="./productos.html">Productos</a></li>
->>>>>>> 547d14d (proyecto terminado (por ahora))
                 <li class="selected"><a href="#">Pedidos especiales</a></li>
                 <li class="carrito"><i class="fa-solid fa-cart-shopping"></i></li>
                 <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
@@ -111,35 +103,6 @@
 
 
     <main>
-<<<<<<< HEAD
-        <form method="post" action="#">
-            <div class="form-column">
-                <div class="form-option">
-                    <label for="descripcion">Descripción: </label>
-                    <textarea name="descripcion" id="descripcion"></textarea>
-                </div>
-                
-                <div class="form-option">
-                    <label for="alergenos">Alergenos: <i class="fa-solid fa-circle-plus"></i> </label>
-                    
-                </div>
-    
-                <div class="form-option">
-                    <label for="cantidad">Cantidad: </label>
-                    <input type="number" name="cantidad" id="cantidad">
-                </div>
-            </div>
-
-            <div class="form-column">
-                <div class="form-option">
-                    <label for="fechaentrega">Fecha de entrega deseada: </label>
-                    <input type="date" name="fechaentrega" id="fechaentrega">
-                </div>
-                <div class="form-option">
-                    <label for="horaentrega">Hora de entrega deseada: </label>
-                    <input type="time" name="horaentrega" id="horaentrega">
-                </div>
-=======
         <h1>Solicitud de pedido especial</h1>
         <form method="post" action="#">
             <div class="form-body">
@@ -176,7 +139,6 @@
             </div>
             <div class="form-footer">
                 <input type="submit" value="Agregar pedido especial al carrito">
->>>>>>> 547d14d (proyecto terminado (por ahora))
             </div>
         </form>
     </main>
@@ -188,13 +150,8 @@
                     <h1>Información</h1>
                     <div class="footer-content">
                         <a href="#" class="separacion-20">¿Quiénes somos?</a>
-<<<<<<< HEAD
-                        <a href="./politicas/privacidad.html">Política de privacidad</a>
-                        <a href="#">Política de cookies</a>
-=======
                         <a href="../politicas/privacidad.html">Política de privacidad</a>
                         <a href="../politicas/cookies.html">Política de cookies</a>
->>>>>>> 547d14d (proyecto terminado (por ahora))
                         <a href="#">Condiciones legales</a>
                     </div>
                 </div>
@@ -223,17 +180,10 @@
                     <h1>Síguenos en redes sociales</h1>
                     <div class="footer-content">
                         <div class="separacion-20">
-<<<<<<< HEAD
-                            <i class="fa-brands fa-facebook"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-whatsapp"></i>
-                            <i class="fa-brands fa-youtube"></i>
-=======
                             <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                             <a href="https://www.instagram.com" target="_blank"></a><i class="fa-brands fa-instagram"></i>
                             <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                             <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
->>>>>>> 547d14d (proyecto terminado (por ahora))
                         </div>
                     </div>
                 </div>
@@ -244,16 +194,12 @@
         let alergenosDiv = document.querySelectorAll(".form-option")[1]
         const addEl = '<input type="text" name="alergenos">'
         let crucetaEl = alergenosDiv.querySelector("i")
-<<<<<<< HEAD
-        let contador = 0;
-=======
         const crucetaCantidad = document.querySelector(".fa-minus")
         const menosCantidad = document.querySelector(".fa-plus")
         const cantidadEl = document.getElementById("cantidad")
         let cantidad = 0
         let contador = 0
         const limiteAlergenos = 10
->>>>>>> 547d14d (proyecto terminado (por ahora))
 
         crucetaEl.addEventListener("click",function(){
             contador++
@@ -261,8 +207,6 @@
             startListener(alergenosDiv.querySelector("i"))
         })
 
-<<<<<<< HEAD
-=======
         function addCantidad(){
             try{
                 cantidad = Number(cantidadEl.value)
@@ -288,16 +232,11 @@
             }
         }
 
->>>>>>> 547d14d (proyecto terminado (por ahora))
         function startListener(e){
             contador++
             e.addEventListener("click",function(){
                 alergenosDiv.innerHTML += addEl
-<<<<<<< HEAD
-                if (contador != 5){
-=======
                 if (contador != limiteAlergenos){
->>>>>>> 547d14d (proyecto terminado (por ahora))
                     startListener(alergenosDiv.querySelector("i"))
                 }
             })
