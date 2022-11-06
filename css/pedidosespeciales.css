@@ -9,6 +9,7 @@ aside{
 
 main{
     font-family:Arial, Helvetica, sans-serif;
+<<<<<<< HEAD
     margin-top:130px;
     font-size:1.1rem;
 }
@@ -22,6 +23,27 @@ main form{
 
 main form label{
     margin-top:10px;
+=======
+    margin-top:180px;
+    font-size:1.1rem;
+    width:100%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main h1{
+    margin-bottom:20px;
+}
+
+main form{
+    box-shadow: rgba(170, 170, 170, 0.16) 0px 1px 3px, rgb(194, 194, 194) 0px 0px 0px 3px;
+    width:60%;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    border-radius:10px;
+>>>>>>> 547d14d (proyecto terminado (por ahora))
 }
 
 main form label i{
@@ -29,9 +51,36 @@ main form label i{
     cursor:pointer;
 }
 
+<<<<<<< HEAD
 main form input,textarea{
     width:100%;
     margin-top:10px;
+=======
+main form textarea{
+    height:150px;
+    width:300px;
+}
+
+main form input,textarea{
+    width:100%;
+    margin-top:10px;
+    resize:none;
+}
+
+form input,textarea{
+    border:1px solid rgb(158, 158, 158);
+    font-size:1.4rem;
+    transition:all 0.1s;
+}
+
+form input:focus,textarea:focus{
+    outline:none;
+    border-bottom: 3px solid rgb(0, 132, 255);
+}
+
+form input[type="number"]{
+    width:60px;
+>>>>>>> 547d14d (proyecto terminado (por ahora))
 }
 
 .form-option{
@@ -41,4 +90,65 @@ main form input,textarea{
 
 .form-column{
     margin:50px;
+<<<<<<< HEAD
 }
+=======
+}
+
+.form-body{
+    display:flex;
+    width:100%;
+    justify-content:center;
+}
+
+.form-footer{
+    display:flex;
+    justify-content: center;
+}
+
+.form-footer input[type=submit]{
+    cursor: pointer;
+    margin:auto;
+    margin-top:20px;
+    background-color: #ffe760;
+    border: 1px solid transparent;
+    border-radius: .75rem;
+    box-sizing: border-box;
+    color: black;
+    font-size: 1.125rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    padding: .75rem 1.2rem;
+    width: auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom:20px;
+}
+
+.form-column *{
+    margin-top:10px;
+}
+
+.quantity i{
+    cursor:pointer;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+    text-align:center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+i{
+    user-select:none;
+}
+
+aside{
+    margin-top:-65px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+>>>>>>> 547d14d (proyecto terminado (por ahora))
